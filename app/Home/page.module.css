@@ -1,0 +1,69 @@
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+    height: 70vh;
+
+  }
+  
+  .title {
+    font-size: 2.5rem; 
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+  
+  .description {
+    text-align: center; 
+    margin-bottom: 40px; 
+  }
+  
+  .events {
+    margin-top: 40px;
+  }
+  
+  .eventsTitle {
+    font-size: 2rem; 
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+  
+  .eventList {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+  }
+  
+  .eventCard {
+    border: 1px solid #ccc; /* Borde alrededor de cada evento */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 10px; /* Margen alrededor */
+    width: calc(30% - 20px); /* Ancho de las tarjetas de eventos */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center; /* Centrar texto */
+  }
+  
+  
+  .link{
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    color: rgb(0, 110, 255);
+  }
+
+  .link:hover{
+    color: rgb(0, 38, 255);
+  }
+
+  .p{
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+
+  .h3{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
