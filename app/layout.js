@@ -4,7 +4,7 @@ import Styles from "./layout.module.css"
 import Img from "./public/logo.png";
 import Image from "next/image"; 
 import Link from "next/link"; 
-
+import TokenProvider from './components/Context/TokenContext';
 
 export const metadata = {
   title: "Create Next App",
@@ -36,7 +36,9 @@ export default function RootLayout({ children }) {
         </header>
 
         <main className={Styles.main}>
+          <TokenProvider>
           {children}
+          </TokenProvider>
         </main>
 
         <footer className={Styles.footer}>
