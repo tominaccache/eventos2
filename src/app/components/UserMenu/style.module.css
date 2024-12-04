@@ -1,65 +1,59 @@
-/* Contenedor principal del UserMenu */
 .userMenu {
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* Alinea los botones al final */
-  gap: 15px; /* Espacio entre los botones */
+  gap: 15px;
+  margin-left: auto; 
 }
 
-/* Botones principales: Iniciar Sesión y Registrarse */
-.userMenu button {
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #fff;
-  margin: 5px;
-  background-color: #602B5F; /* Fondo oscuro */
+.button {
+  background-color: #FFD700;
+  color: #333;
   border: none;
-  border-radius: 25px; /* Bordes redondeados */
+  padding: 7px 16px;
+  font-size: 16px;
+  font-weight: bolder;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Efecto hover para los botones */
-.userMenu button:hover {
-  background-color: #9D82A5; /* Color más claro en hover */
-  transform: scale(1.05); /* Ligeramente más grande al pasar el mouse */
+.button:hover {
+  background-color: #f0f0f0;
+  color: #333;
 }
 
-/* Botón de Iniciar Sesión específico */
-.userMenu button:first-child {
-  background-color: #5C2E70; /* Color para diferenciar Iniciar Sesión */
+.button:active {
+  background-color: #e5e500;
+  color: #fff;
+}
+.button2 {
+  background-color: #FFD700;
+  color: #333;
+  border: none;
+  padding: 7px 16px;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-left:10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.userMenu button:first-child:hover {
-  background-color: #7C3E98; /* Hover específico para Iniciar Sesión */
+.button2:hover {
+  background-color: #f0f0f0;
+  color: #333;
 }
 
-/* Botón de Registrarse específico */
-.userMenu button:last-child {
-  background-color: #805797; /* Color distintivo para Registrarse */
+.button2:active {
+  background-color: #e5e500;
+  color: #fff;
 }
 
-.userMenu button:last-child:hover {
-  background-color: #A678B5; /* Hover específico para Registrarse */
-}
 
-/* Estilo del mensaje de bienvenida */
+
 .userMenu p {
   font-size: 18px;
-  font-weight: 500;
-  color: #3C2A4D; /* Color oscuro */
-  margin-right: 20px; /* Espaciado antes de los botones */
-}
-
-/* Estilo responsivo */
-@media (max-width: 768px) {
-  .userMenu button {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-  
-  .userMenu p {
-    font-size: 16px;
-  }
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
 }

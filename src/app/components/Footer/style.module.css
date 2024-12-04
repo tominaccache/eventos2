@@ -1,24 +1,89 @@
-.footer {
-  background-color: #602B5F; /* Color de fondo oscuro */
-  color: white; /* Color de texto */
-  text-align: center;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  font-size: 16px; /* Tamaño de fuente moderado */
+  background-color: #aaa0a0;
+  color: #fff;
+  box-shadow: 10px 2px 17px 0px rgba(0,0,0,0.33);
+  -webkit-box-shadow: 10px 2px 17px 0px rgba(0,0,0,0.33);
+  -moz-box-shadow: 10px 2px 17px 0px rgba(0,0,0,0.33);
+  height: 10vh;
+  
 }
 
-.footer p {
-  margin: 0; /* Elimina los márgenes alrededor del párrafo */
-  letter-spacing: 1px; /* Aumenta el espaciado entre letras para mejorar la legibilidad */
-  opacity: 0.9; /* Un poco de transparencia para suavizar el texto */
-  transition: opacity 0.3s ease; /* Transición suave en hover */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  margin-right: 10px;
+}
+
+.h1{
+      font-weight: bolder;
+}
+
+.ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  font-weight: bolder;
+}
+
+.a:hover {
+  color: #FFD700; 
 }
 
 
-.footer a {
-  color: #ffcc00; /* Color de enlaces */
-  text-decoration: none; /* Elimina el subrayado de los enlaces */
-  font-weight: bold; /* Negrita para los enlaces */
+
+.footer {
+  background-color: #aaa0a0;
+  color: #fff; 
+  padding: 40px; 
+  text-align: center; 
+  box-shadow: 10px 2px 17px 0px rgba(0,0,0,0.05);
+  -webkit-box-shadow: 10px 2px 17px 0px rgba(0,0,0,0.05);
+  -moz-box-shadow: 10px 2px 17px 0px rgba(0,0,0,0.05);
+  height: 20vh;
 }
+
+.separacion {
+  display: flex;
+  align-items: center; 
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+}
+
+.links, .socialMedia {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.textfooter {
+  color: #f0f0f0;
+  font-size: 17px;
+}
+
+
+
+.socialMedia a {
+  text-decoration: none;
+  color: #f0f0f0; /* Color de enlace */
+transition: color 0.3s; /* Transición suave */
+}
+
+.socialMedia a:hover {
+  text-decoration: underline;
+  color: #fff; /* Cambiar color al pasar el ratón */
+}
+

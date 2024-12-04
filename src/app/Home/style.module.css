@@ -2,10 +2,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-}
-
-.eventItem a, .eventItem .next-link {
-  text-decoration: none; 
+  background-color: #ffffff; 
 }
 
 
@@ -18,7 +15,6 @@
 }
 
 
-
 .eventList {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -27,6 +23,7 @@
   padding: 0;
 }
 
+
 .eventItem {
   background-color: #D9D8EA;
   border: 2px solid #9D82A5;
@@ -34,12 +31,14 @@
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .eventItem:hover {
   transform: scale(1.05);
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
+
 
 .eventLink {
   text-decoration: none;
@@ -48,9 +47,11 @@
   padding: 20px;
 }
 
+
 .eventContent {
   padding: 10px;
 }
+
 
 .eventName {
   color: #602B5F;
@@ -58,20 +59,25 @@
   margin-bottom: 10px;
 }
 
+
 .eventDescription {
   font-size: 1rem;
   color: #4A4A4A;
   margin-bottom: 15px;
 }
 
-.eventDate, .eventPrice {
+
+.eventDate,
+.eventPrice {
   font-size: 1rem;
   color: #9D82A5;
 }
 
-.eventDate strong, .eventPrice strong {
+.eventDate strong,
+.eventPrice strong {
   color: #602B5F;
 }
+
 
 .loading {
   text-align: center;

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation'; 
-import styles from './style.module.css';
+import Styles from './style.module.css';
 import UserMenu from '../UserMenu';
 import { useContext } from 'react';
 import { TokenContext } from '../../context/TokenContext';
@@ -12,13 +12,13 @@ export default function Header() {
   const { isLoggedIn } = useContext(TokenContext);
 
   return (
-    <header className={styles.header}>
-      <div className={styles.logoContainer}>
+    <header className={Styles.header}>
+      <div className={Styles.logoContainer}>
         <Link href="/" aria-current={pathname === '/' ? 'page' : undefined}>
-          <img src="/logo.png" alt="Logo" className={styles.logo} />
+          <img src="/logo.png" alt="Logo" className={Styles.logo} />
         </Link>
       </div>
-      <nav className={styles.nav}>
+      <nav className={Styles.nav}>
         <Link href="/" aria-current={pathname === '/' ? 'page' : undefined}>
           Home
         </Link>

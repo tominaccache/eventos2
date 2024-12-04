@@ -1,21 +1,89 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  height: 70vh;
+}
+
+/* Título principal */
+.title {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Descripción debajo del título */
+.description {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Formulario de contacto */
+.formContacto {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de las etiquetas del formulario */
+.label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilo de los campos de texto del formulario */
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s;
+}
+
+/* Estilo cuando el campo de texto está enfocado */
+.input:focus {
+  border-color: #0070f3;
+  outline: none;
+}
+
+/* Estilo del botón de envío */
+.enviar {
+  padding: 10px;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+/* Estilo cuando el botón está en hover */
+.enviar:hover {
+  background-color: #005bb5;
+}
+
+/* Contenedor de la información de contacto */
 .contact-container {
-    padding: 20px;
-    max-width: 600px;
-    text-align: left; /* Alinea el texto a la izquierda */
-  }
-  
-  .contact-container h1 {
-    margin:0;
-    font-size: 48px; /* Tamaño grande para el título */
-    color: #602B5F; /* Color del título */
-    font-family: 'Amatic SC', cursive; /* Tipografía estilizada */
-    font-weight: 400; /* Peso de letra más fino */
-    margin-bottom: 20px; /* Espacio debajo del título */
-  }
-  
-  .contact-container p {
-    font-size: 20px; /* Tamaño del texto */
-    color: #0a1128; /* Color del texto */
-    margin: 10px 0; /* Espacio entre los párrafos */
-  }
-  
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Estilo de la información de contacto */
+.contact-container p {
+  font-size: 18px;
+  margin: 10px 0;
+}

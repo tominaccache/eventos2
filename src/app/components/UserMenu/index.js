@@ -1,5 +1,5 @@
 "use client"; // Asegúrate de que el archivo sea un Client Component
-import styles from './style.module.css';
+import Styles from './style.module.css';
 import { useState, useEffect, useContext } from 'react';
 import Link from 'next/link'; 
 import { TokenContext } from "../../context/TokenContext";
@@ -13,25 +13,25 @@ export default function UserMenu() {
 
 
   return (
-    <div className={styles.userMenu}>
+    <div className={Styles.userMenu}>
       {token ? (
         <div>
           <p>{name}</p>
           <Link href="/FormularioEvento">
 
-          <button className={styles.button}>Crear Evento</button>
+          <button className={Styles.button}>Crear Evento</button>
           </Link>
 
-          <button className={styles.button} onClick={borrarLS}>Cerrar Sesión</button>
+          <button className={Styles.button} onClick={borrarLS}>Cerrar Sesión</button>
           
         </div>
       ) : (
         <div>
           <Link href="/login">
-            <button className={styles.button}>Iniciar Sesión</button>
+            <button className={Styles.button}>Iniciar Sesión</button>
           </Link>
           <Link href="/register">
-            <button className={styles.button}>Registrarse</button>
+            <button className={Styles.button2}>Registrarse</button>
           </Link>
         </div>
       )}
