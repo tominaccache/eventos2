@@ -15,7 +15,7 @@ export default function EventDetail({ params }) {
 
   const handleSubscribe = async () => {
     try {
-      await axios.post(`http://localhost:3000/api/event/${eventId}/enrollment`, {}, { 
+      await axios.post(`http://localhost:4000/api/event/${eventId}/enrollment`, {}, { 
         headers: { Authorization: `Bearer ${token}` },
       });
       alert('Te has suscrito al evento!');
@@ -29,7 +29,7 @@ export default function EventDetail({ params }) {
   useEffect(() => {
     const fetchEvent = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/event/${eventId}`);
+        const response = await axios.get(`http://localhost:4000/api/event/${eventId}`);
         setEvent(response.data);
         setLoading(false);
       } catch (error) {

@@ -14,7 +14,7 @@ export default function EventList() {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/event/');
+        const response = await fetch('http://localhost:4000/api/event/');
         const data = await response.json();
         setEvents(data);
         setLoading(false);
