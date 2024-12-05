@@ -33,13 +33,13 @@ const FormularioEvento = () => {
         const fetchData = async () => {
             try {
                 const [catRes, locRes, eventsRes] = await Promise.all([
-                    axios.get('http://localhost:3000/api/event-category/', {
+                    axios.get('http://localhost:4000/api/event-category/', {
                         headers: { Authorization: `Bearer ${token}` },
                     }),
-                    axios.get('http://localhost:3000/api/event-location/', {
+                    axios.get('http://localhost:4000/api/event-location/', {
                         headers: { Authorization: `Bearer ${token}` },
                     }),
-                    axios.get('http://localhost:3000/api/event/', {
+                    axios.get('http://localhost:4000/api/event/', {
                         headers: { Authorization: `Bearer ${token}` },
                     }),
                 ]);
@@ -97,7 +97,7 @@ const FormularioEvento = () => {
     
         try {
             await axios.post(
-                'http://localhost:3000/api/event',
+                'http://localhost:4000/api/event',
                 { ...evento },
                 { headers: { Authorization: `Bearer ${token}` } }
             );
