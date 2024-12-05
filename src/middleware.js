@@ -25,7 +25,7 @@ export default async function middleware(req) {
 // Configuración de rutas donde el middleware debe ejecutarse
 export const config = {
   matcher: [
-    '/((?!api|_next/static|_next/image|favicon.ico|.*\\.png$).*)',  // Excluir rutas estáticas y de API
-    '/eventos/'  // Permite rutas dinámicas como /eventos/{id}
+    '/((?!api|_next/static|_next/image|favicon.ico|.*\\.png$).*)',  
+    '/eventos/:path*' // Soporta rutas dinámicas bajo eventos
   ],
-}
+};

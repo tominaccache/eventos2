@@ -1,89 +1,77 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #ffffff;
-  height: 70vh;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #dfe9f3, #ffffff);
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-/* Título principal */
 .title {
-  font-size: 40px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #3498db;
   margin-bottom: 20px;
-  text-align: center;
 }
 
-/* Descripción debajo del título */
 .description {
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 60px;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 30px;
 }
 
-/* Formulario de contacto */
 .formContacto {
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: 350px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+  align-items: center;
 }
 
-/* Estilo de las etiquetas del formulario */
 .label {
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #34495e;
+  align-self: flex-start;
 }
 
-/* Estilo de los campos de texto del formulario */
 .input {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 16px;
-  margin-bottom: 15px;
-  transition: border-color 0.3s;
+  max-width: 600px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #bdc3c7;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
-/* Estilo cuando el campo de texto está enfocado */
 .input:focus {
-  border-color: #0070f3;
+  border-color: #3498db;
   outline: none;
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.2);
 }
 
-/* Estilo del botón de envío */
+textarea.input {
+  resize: none;
+  height: 120px;
+}
+
 .enviar {
-  padding: 10px;
-  background-color: #0070f3;
-  color: #fff;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(135deg, #3498db, #2980b9);
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo cuando el botón está en hover */
 .enviar:hover {
-  background-color: #005bb5;
-}
-
-/* Contenedor de la información de contacto */
-.contact-container {
-  text-align: center;
-  margin-top: 30px;
-}
-
-/* Estilo de la información de contacto */
-.contact-container p {
-  font-size: 18px;
-  margin: 10px 0;
+  transform: scale(1.05);
 }

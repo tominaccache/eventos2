@@ -1,16 +1,10 @@
-/* Header */
 .header {
+  background-color: #34495e;
+  color: #ecf0f1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #aaa0a0;
-  color: #fff;
-  box-shadow: 10px 2px 17px 0px rgba(0, 0, 0, 0.33);
-  -webkit-box-shadow: 10px 2px 17px 0px rgba(0, 0, 0, 0.33);
-  -moz-box-shadow: 10px 2px 17px 0px rgba(0, 0, 0, 0.33);
-  height: 10vh;
-  position: relative; /* Para que los elementos internos puedan posicionarse fácilmente */
+  padding: 30px 30px;
 }
 
 .logoContainer {
@@ -19,8 +13,9 @@
 }
 
 .logo {
-  max-height: 50px;
-  width: auto;
+  margin-right: 20px;
+  height: 50px;
+  cursor: pointer;
 }
 
 .nav {
@@ -29,94 +24,16 @@
 }
 
 .nav a {
-  color: #f0f0f0;
+  color: #ecf0f1;
   text-decoration: none;
-  font-size: 16px;
-  font-weight: bolder;
-  transition: color 0.3s ease;
-}
-
-.nav a:hover {
-  color: #FFD700;
+  font-weight: 500;
 }
 
 .nav a[aria-current="page"] {
-  color: #FFD700; /* Cambiar color del enlace actual */
-}
-
-.ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-  padding: 0;
-}
-
-.ul li {
-  display: inline;
-}
-
-.a {
-  color: #f0f0f0;
-  text-decoration: none;
-  font-size: 16px;
-  transition: color 0.3s ease;
-  font-weight: bolder;
-}
-
-.a:hover {
-  color: #FFD700;
-}
-
-/* Añadir espacio entre el logo y los links */
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 30px; /* Aumentar el espacio entre los elementos */
-}
-
-.UserMenu {
-  margin-left: auto; /* Para asegurar que se alinee a la derecha */
-  padding-left: 20px;
-}
-
-/* Footer */
-.footer {
-  background-color: #aaa0a0;
-  color: #fff;
-  padding: 40px;
-  text-align: center;
-  box-shadow: 10px 2px 17px 0px rgba(0, 0, 0, 0.05);
-  -webkit-box-shadow: 10px 2px 17px 0px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 10px 2px 17px 0px rgba(0, 0, 0, 0.05);
-  height: 20vh;
-}
-
-.separacion {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-bottom: 25px;
-}
-
-.links,
-.socialMedia {
-  list-style-type: none;
-  padding: 0;
-}
-
-.textfooter {
-  color: #f0f0f0;
-  font-size: 17px;
-}
-
-.socialMedia a {
-  text-decoration: none;
-  color: #f0f0f0; /* Color de enlace */
-  transition: color 0.3s; /* Transición suave */
-}
-
-.socialMedia a:hover {
+  font-weight: 700;
   text-decoration: underline;
-  color: #fff; /* Cambiar color al pasar el ratón */
 }
 
+.nav a:hover {
+  color:#e67e22;
+}
